@@ -1,8 +1,8 @@
 # In-vivo Cell Segmentation through Deep Learning
 In vitro and in vivo single cell migration studies are greatly limited to either the time points of analysis or the number of cells tracked. Current methods heavily rely on manual labeling which is not only time consuming but also prone to errors. We proposed a two-step deep learning model that has the ability to classify cell types while tracking individual cells across frames. To achieve single cell tracking analysis, the first step is to classify cells. We proposed to classify nuclei of the cells instead of whole cell body to prevent cells overlapping.
 
+
 We have chosen Detectron2, developed by Facebook, as our Mask R-CNN model. To use Detectron2, we first input the fluorescent cell image into the ResNet-FPN backbone. Follwing the ResNet-FPN extract feature, there are two stages of Mask RCNN. First, it generates proposals about the regions where there might be an object based on the input image. Then preserves exact spatial locations through a ROI align layer. Second, it predicts the class of the object, refines the bounding box and generates a mask in pixel level of the object based on the first stage proposal. Both stages are connected to the backbone structure. Finally, we arrive at a model with the output of cell nuclei instance segmentation, the bounding box region, and the classification of cells and background. 
 
-https://static.wixstatic.com/media/ec491b_3bc7fd924b6c486881ffd65245aa238b~mv2.png/v1/crop/x_457,y_377,w_5067,h_1891/fill/w_1958,h_730,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/p.png![image](https://user-images.githubusercontent.com/61369941/166638978-6e218215-b80f-49ef-a0f2-a3135fef6126.png)
 
 A cropped view of the predicted output using our final trained Mask R-CNN model. The score represents the accuracy between ground truth and the prediction. In cases where the merging of the two cells is presented, the model still performed highly.
