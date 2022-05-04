@@ -12,7 +12,7 @@ A cropped view of the predicted output using our final trained Mask R-CNN model.
 
 Requirement for running Detectron2 include:
 
-gcc & g++ ≥ 5
+gcc & g++ ≥ 5 \
 Python ≥ 3.6
 PyTorch ≥ 1.4
 torchvision that matches the PyTorch installation
