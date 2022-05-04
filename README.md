@@ -13,10 +13,10 @@ A cropped view of the predicted output using our final trained Mask R-CNN model.
 Requirement for running Detectron2 include:
 
 gcc & g++ ≥ 5 \
-Python ≥ 3.6
-PyTorch ≥ 1.4
-torchvision that matches the PyTorch installation
-OpenCV
-pycocotools: pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
-fvcore: conda install -c fvcore fvcore
-Detectron2: pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
+Python ≥ 3.6 \
+PyTorch ≥ 1.4 \
+torchvision that matches the PyTorch installation \
+OpenCV \
+pycocotools: pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI' \
+fvcore: conda install -c fvcore fvcore \
+Detectron2: pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html \
