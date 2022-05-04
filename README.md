@@ -19,4 +19,4 @@ torchvision that matches the PyTorch installation \
 OpenCV \
 pycocotools: pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI' \
 fvcore: conda install -c fvcore fvcore \
-Detectron2: pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html \
+Detectron2: pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
